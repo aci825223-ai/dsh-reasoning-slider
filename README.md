@@ -41,7 +41,21 @@ dsh plugin --profile <你的 profile 名> add github:aci825223-ai/dsh-reasoning-
 
 装好后插件会出现在 **设置 → 插件 → 已安装** 列表里，开关默认打开。
 
-### 方式三：本地源码（开发用）
+### 方式三：预构建 tarball
+
+不想让 pnpm 从源码取包的话，用 release 里附带的预构建包（地址固定，不带版本号，不会随发版失效）：
+
+```
+https://github.com/aci825223-ai/dsh-reasoning-slider/releases/latest/download/dsh-reasoning-slider.tgz
+```
+
+同样粘到 **添加插件** 里，或：
+
+```bash
+dsh plugin --profile <你的 profile 名> add https://github.com/aci825223-ai/dsh-reasoning-slider/releases/latest/download/dsh-reasoning-slider.tgz
+```
+
+### 方式四：本地源码（开发用）
 
 把仓库克隆到任意位置，然后链接进 profile：
 
