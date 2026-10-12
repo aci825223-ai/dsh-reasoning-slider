@@ -18,7 +18,8 @@
     "cordis.patch.yml",
     "README.md",
     "LICENSE",
-    "screenshots.json"
+    "screenshots.json",
+    "docs"
   ],
   "keywords": [
     "dsh",
