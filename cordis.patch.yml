@@ -1,0 +1,13 @@
+# Self-mount row for this bundle.
+#
+# The row id MUST stay identical to the package name: the client-modules host
+# half resolves the browser bundle through the row name
+# (`require.resolve('<row-name>/package.json')` + the `dsh.client` field).
+#
+# The Web half of this plugin registers a competing occupant for the single
+# slot `conversation.input.model` at priority -1, which shadows the shipped
+# ModelSelect without disabling `ui-model-selection` (its `modelDirectories`
+# service and its /model popup keep working).
+- insert:
+    - id: dsh-reasoning-slider
+      name: dsh-reasoning-slider

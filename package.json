@@ -1,0 +1,52 @@
+{
+  "name": "dsh-reasoning-slider",
+  "version": "1.0.0",
+  "description": "DSH Web plugin: replace the composer reasoning-effort (推理等级) picker with an inline slider card.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "screenshots.json"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "composer",
+    "reasoning-effort",
+    "slider"
+  ],
+  "author": "aci825223-ai",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aci825223-ai/dsh-reasoning-slider.git"
+  },
+  "homepage": "https://github.com/aci825223-ai/dsh-reasoning-slider#readme",
+  "bugs": {
+    "url": "https://github.com/aci825223-ai/dsh-reasoning-slider/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "external": []
+    }
+  }
+}
